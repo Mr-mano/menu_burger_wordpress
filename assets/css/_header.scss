@@ -1,0 +1,137 @@
+/*HEADER*/
+#feedly-mini{
+    display: none;
+}
+
+header{
+    background-color: #23282d;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin-top: 0; 
+    display: flex;
+}
+header.menu{
+    height: 65px;
+
+}
+.portfolio{
+    display: inline-block;
+    font-size: 3em;
+    width: 762px;
+    margin-bottom: -30px;
+    color: white;
+}
+header .container-name{
+    display: flex;
+    font-weight: bold;
+    width: auto;
+    margin-bottom: -15px;
+}
+
+header .bloc-top{
+    display: flex;
+    flex-direction: column;
+}
+header .prenom
+{
+    font-size: 10em;
+    color:  #14bc9e;
+    letter-spacing: -0.1em;
+    font-family: 'Roboto', arial;
+}
+header .nom{
+    color: white;
+    font-size: 10em;
+    margin-left: 35px;
+    font-family: 'Roboto', arial; 
+}
+
+/*HEADER DEVELOPPER, GRAPHISTE, ILLUSTRATEUR*/
+header .qualif{
+    font-size: 2.8em;
+    color: white; 
+}
+header .qualif2{
+    font-size: 1.5em;
+    color: #23282d;
+}
+header .qualif3{
+    font-size: 1.2em;
+    color: #23282d;
+}
+header .container-qualification{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    text-align: center;
+}
+header .container-name{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+header span{
+    display: block;
+    font-family: 'Roboto', arial;
+}
+/*VERSION tablette*/
+/*HEADER*/
+@media only screen and (max-width: 785px){
+    header .prenom
+    {
+        font-size: 6em;
+        letter-spacing: -0.1em;
+    }
+    header .nom{
+        font-size: 6em;
+        margin-left: 20px;
+    }
+    header .portfolio{
+        display: inline-block;
+        font-size: 1.7em;
+        width: 315px;
+        margin-bottom: -10px;
+        color: white;
+    }
+    header .qualif{
+        font-size: 2.5em;
+        margin-bottom: 5px;
+        color: white; 
+    }
+    header .container-name{
+        margin-bottom: -10px;
+    }
+    }
+
+
+
+/*VERSION MOBILE*/
+/*HEADER*/
+@media only screen and (max-width: 560px){
+header .prenom
+{
+    font-size: 4em;
+    letter-spacing: -0.1em;
+}
+header .nom{
+    font-size: 4em;
+    margin-left: 20px;
+}
+header .portfolio{
+    display: inline-block;
+    font-size: 1.7em;
+    width: 315px;
+    margin-bottom: -10px;
+    color: white;
+}
+header .qualif{
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: white; 
+}
+header .container-name{
+    margin-bottom: -10px;
+}
+}

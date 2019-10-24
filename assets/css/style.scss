@@ -1,0 +1,39 @@
+@import "header";
+@import "front-page.scss";
+@import "nav.scss";
+
+*{
+    box-sizing: border-box;
+    font-size: 0.900rem;
+}
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', arial;
+    font-size: 0.900rem;
+    letter-spacing: 0.1em;
+    color: #23282d;
+}
+
+
+/*PAGE PAR DEFAULT*/
+body.page-template-default .bloc-top{
+    height: 650px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+  
+  

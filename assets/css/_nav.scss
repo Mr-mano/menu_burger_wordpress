@@ -1,0 +1,262 @@
+
+#navbar{
+	height: 50px;
+	width: 100%;
+	background-color: #23282d;
+	overflow: hidden;
+	
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/*BURGER*/
+.nav-toggle{
+	display: none;
+}
+
+.menu-burger{
+	opacity: 0;
+}
+.menu{
+	margin: 0;
+	padding: 0;
+}
+@media only screen and (max-width: 785px){
+	#navbar{
+		display: block;
+		position: absolute;
+		top: 699px;
+		left: 0px;
+		z-index: 9999;
+		height: 400px;
+		width: 0;
+		background-color: #23282d;
+		padding-top: 60px;
+		
+	}
+
+	
+	
+	.nav-toggle {
+		display: block;
+		font-size: 0;
+		width: 40px;
+		height: 45px;
+		position: absolute;
+		top: 660px;
+		left: 10px;
+		z-index: 9999;
+		background: none;
+		border: none;
+	}
+	
+	.nav-toggle span,
+	.nav-toggle::before,
+	.nav-toggle::after {
+		display: block;
+		position: absolute;
+		height: 6px;
+		width: 100%;
+		background:  #23282d;
+		border-radius: 6px;
+		opacity: 1;
+		left: 0;
+		transition: .3s;
+		transform-origin: left center;
+	}
+	
+	.nav-toggle::before {
+		content: '';
+		top: 0px;
+	}
+	
+	.nav-toggle span {
+		top: 12px;
+	}
+	
+	.nav-toggle::after {
+		content: '';
+		top: 24px;
+	}
+	.nav-expanded .nav-toggle::before {
+		transform: rotate(45deg);
+		top: -2px;
+		left: 5px;
+		background:  #fff;
+		margin-left: 175px;
+		transition: 0.3s;
+	}
+	
+	.nav-expanded .nav-toggle span {
+		width: 0%;
+		opacity: 0;
+	}
+	
+	.nav-expanded .nav-toggle::after {
+		transform: rotate(-45deg);
+		top: 26px;
+		left: 5px;
+		background:  #fff;
+		margin-left: 175px;
+		transition: 0.3s;
+	}
+	.nav-expanded .menu-burger{
+		font-size: 2rem;
+		color: #fff;
+		opacity: 1;
+		padding: 0 0 0 20px;
+		font-family: "roboto";
+		
+	}
+	.nav-expanded #navbar{
+		display: block;
+		position: absolute;
+		top: 650px;
+		left: 0px;
+		z-index: 9999;
+		min-height: 400px;
+		height: auto;
+		width: 180px;
+		background-color: #23282d;
+		padding-top: 60px;
+		transition: 0.3s;
+	}
+	.nav-expanded #navbar > a{
+		display: inline;
+	}
+	.nav-expanded .container_burger{
+		display: block;
+		position: absolute;
+		top: 650px;
+		left: 0px;
+		z-index: 9999;
+		background-color: #e74c3c;
+		height: 50px;
+		width: 230px;
+		padding: 5px 0 0 0;
+	}
+	.menu{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.menu > li > a{
+		color: #fff;
+		opacity: 0.7;
+	}
+	.menu > li > a:hover{
+		color: #e74c3c;
+		transition: color 0.5s ease;
+		opacity: 1;
+		text-decoration: none;
+	}
+	.nav-expanded .sub-menu{
+		color: #fff;
+	}
+	
+	.menu > li{
+		padding: 20px 0 15px 25px;
+		text-align-last: left;
+		border-bottom: 1px dashed #4c4c4c; 
+		
+	}
+	
+	.sub-menu{
+		padding: 0;
+	}
+	.nav-expanded .sub-menu > li{
+		display: none;
+		height: 50px;
+		width: 120px;
+		text-align: center;
+		padding-top: 13px;
+		list-style-type: none;
+	}
+	.sub-menu > li{
+		color: #fff;
+		opacity: 0.7;
+		transition: 0.3s;
+		text-align: left;
+		padding: 20px 0 0 20px;
+		margin-top: 15px;
+		
+	}
+	.sub-menu > li > a{
+		color: #fff;
+		opacity: 0.7;
+		transition: 0.3s;
+	}
+	.menu > li:hover > .sub-menu > li{
+		display: block;
+		transition: 0.5s;
+	}
+	.sub-menu > li > a:hover{
+		color: #e74c3c;
+		transition: 0.3s;
+		opacity: 1;
+		text-decoration: none;
+	}
+	
+}
+/* Fin du responsive*/
+@media only screen and (min-width: 785px){
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 10% 0 10%;
+}
+.menu > li{
+	display: flex;
+	width: auto;
+	height: 50px;
+	padding: 0;
+}
+
+.menu > li > a{
+	color: #fff;
+	text-decoration: none;
+	height: 50px;
+    align-items: center;
+	display: flex;
+	opacity: 0.7;
+}
+.menu > li > a:hover{
+	opacity: 1;
+}
+.sub-menu{
+	
+	position: absolute;
+	top: 699px;
+	list-style-type: none;
+	height: auto;
+	padding: 0;
+	background-color: #23282d;
+}
+
+.sub-menu > li > a{
+	display: none;
+	height: 50px;
+	width: 150px;
+	
+	text-align: center;
+	color: #fff;
+	padding-top: 13px;
+	text-decoration: none;
+	opacity: 0.7;
+	
+}
+.menu > li:hover > .sub-menu > li > a{
+	display: block;
+}
+.sub-menu > li > a:hover{
+	
+	transition: 0.3s;
+	opacity: 1;
+
+}
+}

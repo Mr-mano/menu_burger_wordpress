@@ -1,0 +1,21 @@
+.presentation{
+    padding: 7% 15% 5% 15%;
+    background-color: #fff;
+}
+.presentation > p{
+    text-align: justify;
+}
+/*évite que le texte bouge lorsque on click sur le burger*/
+.nav-expanded .presentation{
+    padding: 69px 15% 5% 15%;
+}
+
+@media only screen and (max-width: 480px){
+    .presentation{
+        padding: 50px 15% 5% 15%;
+    }
+    .presentation > h1{
+        font-size: 2rem;
+    }
+    
+}
